@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class = "firstSection">
+	<div class = "overallContainer">
+		<div class = "blogHolder">
+		<h3>{{ page.title }}</h3>
+		<h4>{{ page.date | date: "%B %-d, %Y" }}</h4>
+			<div class = "textSection">
+                {{content}}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="olderNewerLinks">
+    <div class = "olderSection">
+        {% if page.url != "/archive/2020/06/23/ep-1-drawstring/" %}
+            <a class = "older" href = "/archive/2020/06/23/ep-1-drawstring/"> « </a>
+        {% else %}
+            <a style = "display: none;">  </a>
+        {% endif %}
+        {% if page.previous.url %}
+        <a href="{{ site.baseurl }}{{page.previous.url}}">&#8592; {{page.previous.nextTitle}}</a>
+        {% endif %}
+    </div>
+    <div class = "newerSection">
+        {% if page.next.url %}
+        <a href="{{ site.baseurl }}{{page.next.url}}" >{{page.next.nextTitle}} &#8594;</a>
+        {% endif %}
+
+        {% for post in site.posts limit: 1 %}
+            {% if page.title != post.title %}
+                <a href = "{{site.baseurl}}{{post.url}}" class="newer"> &raquo; </a>	
+            {% else %}
+                <a style = "display: none;"> </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

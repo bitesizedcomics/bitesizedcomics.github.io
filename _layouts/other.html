@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class = "firstSection">
+	<div class = "overallSection">
+	<div class = "fixedNewsPhone">
+			<p class = "yearTitle"> <b>Years</b> </p>
+            {% for item in site.data.other_navigation %}
+                    <p class = "borderTop"><a href = "{{ item.link }}" {% if page.url == item.link %} class = "currentYear" {% endif %}{% if page.url == "/media/news/2008/" %} id = "lastYear" {% endif %}>{% if page.url == item.link %} &rarr; {% endif %} {{ item.name }}</a></p>
+            {% endfor %}
+			
+	</div>
+		<div class = "newsHolder">
+			{{ content }}
+		</div>
+		<div class = "fixedNews">
+			<p class = "yearTitle"> <b>Years</b> </p>
+            {% for item in site.data.other_navigation %}
+                    <p class = "borderTop"><a href = "{{ item.link }}" {% if page.url == item.link %} class = "currentYear" {% endif %}>{% if page.url == item.link %} &rarr; {% endif %} {{ item.name }}</a></p>
+            {% endfor %}
+		</div>
+	</div>
+</div>

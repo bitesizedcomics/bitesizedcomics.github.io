@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Source Sans Pro", sans-serif;
+	text-transform: lowercase;
+    letter-spacing: 2px;
+	z-index: 100;
+}
+
+
+.logoBox {
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 20%;
+}
+
+.logoBox a {
+	color: black;
+    font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.logoBox a img {
+	object-fit: contain;
+	height: 100%;
+}
+
+.secondBox {
+	margin-left: 12%;
+    width: 76%;
+	margin-right: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerList {
+	height: 70px; 
+	list-style-type: none;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 70px;
+	width: 40%;
+}
+
+
+.headerList li a {
+	color: black;
+	font-size: 18px;
+    font-weight: bold;
+    -webkit-transition-duration: 0.3s; 
+	transition-duration: 0.3s;
+}
+
+.headerList li a:hover {
+	color: teal;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+footer {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: 100%;
+	background-color: #1c1b1b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+
+.rightSectionFooter {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.footerList {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-bottom: 15px;
+}
+
+.footerList li {
+    list-style-type: none;
+}
+
+.footerList li a {
+    color: white;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    transition-duration: 0.3s;
+}
+
+.footerList li a:hover {
+    color: azure;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+ 
+.overlay {
+	display: none;
+}
+
+.Hamburger {
+	display: none;
+}
+
+.hamburgerHolder {
+	display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}

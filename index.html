@@ -1,0 +1,40 @@
+---
+layout: default
+title: Bite-Sized
+custom_css: 
+    - blogMedia
+    - blogfirstcss
+pagination: 
+    enabled: true
+---
+
+
+{% for post in site.posts limit: 1 %}
+    <div class = "firstSection">
+	<div class = "overallContainer">
+		<div class = "blogHolder">
+		<h3>{{ post.title }}</h3>
+		<h4>{{ post.date | date: "%B %-d, %Y" }}</h4>
+			<div class = "textSection">
+                {{post.content}}
+			</div>
+		</div>
+	</div>
+</div>
+{% endfor %}
+{% for post in site.posts limit: 2 %}
+    {% if forloop.first == false %}
+    <div class="olderNewerLinks">
+        <div class = "olderSection">
+            {% if page.url != "/archive/2020/06/23/ep-1-drawstring/" %}
+                <a class = "older" href = "/archive/2020/06/23/ep-1-drawstring/"> « </a>
+            {% else %}
+                <a style = "display: none;">  </a>
+            {% endif %}
+        
+            <a href="{{ site.baseurl }}{{post.url}}">&#8592; {{post.nextTitle}}</a>
+        
+        </div>
+    </div>
+    {% endif %}
+{% endfor %}
