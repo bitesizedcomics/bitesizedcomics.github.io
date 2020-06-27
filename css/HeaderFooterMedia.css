@@ -8,17 +8,18 @@
 	display: none !important;
 }
 
-.second-box {
-  display: none !important;
-}
 
+.secondBox {
+    margin-left: 5% !important;
+}
+    
 header {
   width: 100%;
   height: 60px;
 }
 
-.logo-box {
-  width: 20%;
+.logoBox {
+    width: 70%;
 }
 
 .logoBox a img {
@@ -26,21 +27,6 @@ header {
   margin-left: 20%;
 }
 
-.second-box ul {
-  display: none !important;
-}
-
-.second-box ul li {
-  display: none !important;
-}
-
-.second-box li a {
-  display: none !important;
-}
-
-.second-box li button {
-  display: none !important;
-}
 
 
 
@@ -101,15 +87,15 @@ header {
   padding: 8px;
   text-decoration: none;
   font-size: 30px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
-  text-transform: none !important;
+  text-transform: lowercase!important;
   letter-spacing: 1.5px;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: white;
 }
 
 .CloseButton {
@@ -120,11 +106,13 @@ header {
   padding: 0 !important;
   display: none;
 }
-
-
-
-
-
+    
+.overlayHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    
 /*@media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .CloseButton {
@@ -135,53 +123,6 @@ header {
 }*/
 
 
-.phoneDropdown {
-  width: 100%;
-  margin-left: 15%;
-}
-
-.phoneDropdown a {
-	font-size: 25px !important;
-}
-
-.MusicDropDown a {
-  font-size: 15px;
-  padding-left: 20px;
-}
-
-.footer2 {
-  display: flex !important;
-  flex-direction: column;
-}
-
-.footer {
-  display: none;
-}
-
-.footer2 img {
-  height: 100%;
-  margin-top: 3vh;
-}
-
-.footer2 p {
-  font-size: 2vh;
-  text-align: center;
-  color: #ababab;
-}
-
-.FooterBottom {
-  margin-top: 0;
-}
-
-.footer {
-  display: none;
-}
-
-a:link {
-  text-decoration: none;
-  font-family: "Roboto Condensed",sans-serif;
-}
-
 .CloseButton {
   position: absolute !important;
   left: 80% !important;
@@ -190,48 +131,13 @@ a:link {
   height: auto !important;
   width: auto !important;
 }
-
-
-.footer2 {
-   height: 70px;
-   width: 100%;
-   background-color: #595959;
-   display:flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.footer2 p {
-  margin: 0px;
-  padding: 0px;
-  height: 70px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Verdana, Geneva, sans-serif;
-  color: white;
-}
-
- .footer {
-    display: none !important;
-  }
-
-
-
-#landingVideo {
-	overflow: hidden !important;
-	min-height: 100vh !important;
-	min-width: 100vw !important;
+    
+.imageHolder {
+    width: 80% !important;
 }
 
 .imageHolder img {
 	width: 100%;
-}
-
-.landing h2 {
-	font-size: 15px;
-	letter-spacing: 1.5px;
 }
 
 .titleHolder {
@@ -242,44 +148,24 @@ footer {
 	flex-wrap: wrap;
 }
 
-.leftSection {
-	width: 100%;
-	margin: 0 !important;
-	margin-top: 10% !important;
-	flex-wrap: wrap !important;
-}
-
-.footerLogoHolder  img{
-	width: 100% ;
-}
-
-.footerLogoHolder {
-	margin-left: 3%;
-}
-
-.leftTopSection {
-	width: 100%;
-}
-
-.wordsSection {
-	width: 80%;
-}
-
 .rightSectionFooter {
 	width: 100%;
 	margin: 10% 5% 10% 5% !important;
 	
 }
 
-.FooterLinks {
-	margin-top: 3%;
+
+.copyright h3 {
+    text-align: center;
+    line-height: 30px;
 }
 
-.footerLogoHolder img {
-	height: 121px;
-	width: 120px;
+.aboutSection {
+    margin-top: 8% !important;
+    margin-bottom: 8% !important;
+    flex-direction: column;
 }
-
+    
 
 
 

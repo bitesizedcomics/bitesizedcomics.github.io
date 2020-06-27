@@ -79,5 +79,15 @@
 	.writtenSection {
 		width: 100%;
 	}
+    
+    .yearTitle {
+        font-family: "Source Sans Pro", sans-serif;
+        text-transform: lowercase;
+    }
+    
+    .borderTop {
+        padding: 0 !important;
+        border-top: 0px solid white !important;
+    }
 	
 }
