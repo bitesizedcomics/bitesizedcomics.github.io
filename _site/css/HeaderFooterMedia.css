@@ -81,6 +81,7 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  height: 60% !important;
 }
 
 .overlay a {
@@ -108,9 +109,7 @@ header {
 }
     
 .overlayHolder {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
 }
     
 /*@media screen and (max-height: 450px) {
@@ -165,6 +164,7 @@ footer {
     margin-bottom: 8% !important;
     flex-direction: column;
 }
+
     
 
 

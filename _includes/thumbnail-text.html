@@ -1,7 +1,7 @@
 <div id = "firstBlog" class = "blogContainerActual">
-    <div class = "imageHolder" {% if post.showThumbnail == false %} style = "display: none !important;" {% endif %}>
+    <a href = "{{site.baseurl}}{{post.url}}" class = "imageHolder" {% if post.showThumbnail == false %} style = "display: none !important;" {% endif %}>
             <img src = "{{site.baseurl}}{{post.thumbnail}}"/>
-        </div>
+        </a>
         <a href = "{{site.baseurl}}{{post.url}}" class = "textSection" {% if post.showThumbnail == false %} id = "noPictureBlogPost" {% endif %}>
             <h3>{{ post.title }}</h3>
             <h4>{{ post.date | date: "%B %-d, %Y"  }}</h4>
