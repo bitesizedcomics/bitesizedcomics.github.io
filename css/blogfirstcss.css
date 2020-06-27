@@ -336,6 +336,10 @@
     color: darkslategrey;
 }
 
+.olderSection a, .newerSection a {
+    color: darkslategrey !important;
+}
+
 .textSection p {
     display: flex;
     justify-content: center;
