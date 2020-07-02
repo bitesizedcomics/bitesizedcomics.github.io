@@ -9,19 +9,38 @@
 			<li><a class = "sponsors" href = "/other-stuff/" {% if page.url == "/other-stuff/" %} style = "color: teal !important;"{% endif %}> Other Stuff </a></li>
 		</ul>
 	</nav>
-<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<!--<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>-->
 
- <div id="myNav" class="overlay">
-   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-  <div class = "overlayHolder">
-    <a href="/about/" {% if page.url == "/about/" %} style = "color: teal !important;" {% endif %}>About</a>
-	<a href="/archive/" {% if page.url contains "/archive/" %} style = "color: teal !important;" {% endif %}>Archive</a>
-    <a href="/other-stuff/" {% if page.url == "/other-stuff/" %} style = "color: teal !important;" {% endif %}>Other Stuff</a>
-	</div>
-	</div>
-  </div>
+
+ <!--<div id="myNav" class="overlay">-->
+   <!--<span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>-->
+    <div id="hamburgerMenu" onclick="menuClicked(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <nav>
+        <ul id="navLinks">
+            <li>
+                 <a href="/about/" {% if page.url == "/about/" %} style = "color: teal !important;" {% endif %}>about</a>
+            </li>
+            <li>
+                <a href="/archive/" {% if page.url contains "/archive/" %} style = "color: teal !important;" {% endif %}>archive</a>
+            </li>
+            <li>
+                <a href="/other-stuff/" {% if page.url == "/other-stuff/" %} style = "color: teal !important;" {% endif %}>other stuff</a>
+            </li>
+        </ul>
+    </nav>
+    <!--<a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>-->
+    <!--<div id = "overlay-content" class="overlay-content">
+      <div class = "overlayHolder">
+        <a href="/about/" {% if page.url == "/about/" %} style = "color: teal !important;" {% endif %}>About</a>
+        <a href="/archive/" {% if page.url contains "/archive/" %} style = "color: teal !important;" {% endif %}>Archive</a>
+        <a href="/other-stuff/" {% if page.url == "/other-stuff/" %} style = "color: teal !important;" {% endif %}>Other Stuff</a>
+      </div>
+	</div>-->
+  <!--</div>
   <script>
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
@@ -31,5 +50,5 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-</script>
+</script>-->
 </header>

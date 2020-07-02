@@ -14,6 +14,9 @@
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="/images/Favicon5.png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <!-- scripts -->
+    <script src="/scripts/hamburger.js"></script>
+    <!-- custom css -->
      
         
         <link rel = "stylesheet" href = "/css/blogMedia.css">
@@ -33,19 +36,38 @@
 			<li><a class = "sponsors" href = "/other-stuff/" > Other Stuff </a></li>
 		</ul>
 	</nav>
-<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<!--<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>-->
 
- <div id="myNav" class="overlay">
-   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-  <div class = "overlayHolder">
-    <a href="/about/" >About</a>
-	<a href="/archive/" >Archive</a>
-    <a href="/other-stuff/" >Other Stuff</a>
-	</div>
-	</div>
-  </div>
+
+ <!--<div id="myNav" class="overlay">-->
+   <!--<span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>-->
+    <div id="hamburgerMenu" onclick="menuClicked(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <nav>
+        <ul id="navLinks">
+            <li>
+                 <a href="/about/" >about</a>
+            </li>
+            <li>
+                <a href="/archive/" >archive</a>
+            </li>
+            <li>
+                <a href="/other-stuff/" >other stuff</a>
+            </li>
+        </ul>
+    </nav>
+    <!--<a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>-->
+    <!--<div id = "overlay-content" class="overlay-content">
+      <div class = "overlayHolder">
+        <a href="/about/" >About</a>
+        <a href="/archive/" >Archive</a>
+        <a href="/other-stuff/" >Other Stuff</a>
+      </div>
+	</div>-->
+  <!--</div>
   <script>
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
@@ -55,7 +77,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-</script>
+</script>-->
 </header>
 <body>
 	
