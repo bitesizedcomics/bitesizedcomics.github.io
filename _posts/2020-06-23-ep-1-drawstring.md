@@ -8,7 +8,7 @@ title: "Ep. 1: Drawstring"
 nextTitle: Drawstring
 ---
 
-<img class = "comic" src = "/comics/Comic1_FinalFix.jpg"/>
+<img class = "comic" src = "/comics/Comic1_Final.jpg"/>
 
 <!--<div class = "imageHolderInsideBlog">
     <img id = "insideBlogPic" src = "{{ site.baseurl }}/images/EXOLogo.png"/>
