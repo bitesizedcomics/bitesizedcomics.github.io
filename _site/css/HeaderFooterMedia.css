@@ -164,7 +164,7 @@ footer {
     cursor: pointer;
     position: fixed;
     right: 10%;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.2s linear;
 }
 
 .bar1, .bar2, .bar3 {
