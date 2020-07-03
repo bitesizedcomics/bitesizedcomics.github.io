@@ -8,7 +8,7 @@ title: "Ep. 2: Blogging"
 nextTitle: Blogging
 ---
 
-<img class = "comic" style = "width: 90%;"  src = "/comics/Comic2_Final.jpg"/>
+<img class = "comic" src = "/comics/Comic2_Final2.jpg"/>
 
 <!--<div class = "imageHolderInsideBlog">
     <img id = "insideBlogPic" src = "{{ site.baseurl }}/images/EXOLogo.png"/>
