@@ -10,6 +10,3 @@ nextTitle: Ghosting
 
 <img class = "comic" src = "/comics/Comic3_Final.jpg"/>
 
-<!--<div class = "imageHolderInsideBlog">
-    <img id = "insideBlogPic" src = "{{ site.baseurl }}/images/EXOLogo.png"/>
-</div>-->

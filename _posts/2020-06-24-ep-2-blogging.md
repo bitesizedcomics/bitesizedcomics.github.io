@@ -10,6 +10,3 @@ nextTitle: Blogging
 
 <img class = "comic" src = "/comics/Comic2_Final2.jpg"/>
 
-<!--<div class = "imageHolderInsideBlog">
-    <img id = "insideBlogPic" src = "{{ site.baseurl }}/images/EXOLogo.png"/>
-</div>-->
