@@ -141,7 +141,7 @@
     }
     
     .olderSection, .newerSection {
-        width: 40% !important;
+        width: auto !important;
     }
     
 	

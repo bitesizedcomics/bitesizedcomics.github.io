@@ -328,7 +328,7 @@
 .olderSection, .newerSection {
     display: flex;
     justify-content: space-between;
-    width: 12%;
+    width: auto;
 }
 
 
@@ -338,6 +338,14 @@
 
 .olderSection a, .newerSection a {
     color: darkslategrey !important;
+}
+
+.olderSection a {
+    padding-right: 10px;
+}
+
+.newerSection a {
+    padding-left: 10px;
 }
 
 .textSection p {
