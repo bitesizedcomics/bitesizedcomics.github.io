@@ -4,7 +4,7 @@ custom_css:
     - blogMedia
     - blogfirstcss
 thumbnail: /images/thumbnail7.JPG
-title: "Ep. 6: Dog Tricks"
+title: "Ep. 7: Dog Tricks"
 nextTitle: Dog Tricks
 ---
 
