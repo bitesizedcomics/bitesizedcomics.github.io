@@ -19,7 +19,7 @@ pagination:
 		{% if paginator.total_pages > 1 %}
         <div class="pagination">
           {% if paginator.page != 1 %}
-            <a href = "/blog/"> « </a>
+            <a href = "/archive/"> « </a>
           {% else %}
             <a style = "visibility: hidden;"> </a>
           {% endif %}
@@ -30,6 +30,19 @@ pagination:
             <a style = "visibility: hidden;"> < </a>
           {% endif %}
 
+          <!-- start of new code i added -->
+          {% if paginator.total_pages == 5 or paginator.total_pages < 5 %}
+               {% for page in (1..paginator.total_pages) %}
+                    {% if page == paginator.page %}
+                      <a style = "color: rgb(96, 156, 14);">{{ page }}</a>
+                    {% elsif page == 1 %}
+                      <a href="/archive/">{{ page }}</a>
+                    {% else %}
+                      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                    {% endif %}
+                  {% endfor %}
+         {% else %} <!-- else section -->
+
           {% assign current = paginator.page %}
           {% assign secondlast = paginator.total_pages | minus: 1 %}
           {% assign currentmax = paginator.total_pages | minus: 2 %}
@@ -39,7 +52,7 @@ pagination:
                     {% if page == paginator.page %}
                       <a style = "color: rgb(96, 156, 14);">{{ page }}</a>
                     {% elsif page == 1 %}
-                      <a href="/blog/">{{ page }}</a>
+                      <a href="/archive/">{{ page }}</a>
                     {% else %}
                       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
                     {% endif %}
@@ -52,7 +65,7 @@ pagination:
                 {% if page == paginator.page %}
                   <a style = "color: rgb(96, 156, 14);">{{ page }}</a>
                 {% elsif page == 1 %}
-                  <a href="/blog/">{{ page }}</a>
+                  <a href="/archive/">{{ page }}</a>
                 {% else %}
                   <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
                 {% endif %}
@@ -63,13 +76,13 @@ pagination:
                         {% if page == paginator.page %}
                           <a style = "color: rgb(96, 156, 14);"> {{ page }}</a>
                         {% elsif page == 1 %}
-                          <a href="/blog/">{{ page }}</a>
+                          <a href="/archive/">{{ page }}</a>
                         {% else %}
                           <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
                         {% endif %}
                       {% endfor %}
             {% endif %}
-
+           <!-- End of new thing I added -->{% endif %}
 
           {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> > </a>
